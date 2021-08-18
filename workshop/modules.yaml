@@ -1,21 +1,13 @@
 modules:
   workshop-overview:
     name: Workshop Overview
-  setup-environment:
-    name: Setup Environment
-  docker-login:
-    name: Docker Authenticate
-  buildpacks:
-    name: What is a buildpack?
-  clusterstores:
-    name: Configure which buildpacks you want to use
-  clusterstacks:
-    name: Configure which base images you want to use
-  builders:
-    name: Assemble the components
-  images:
-    name: Build an app into an OCI image
-  rebase:
-    name: Keep that OCI image up-to-date
+  what-is-grafana:
+    name: What is Grafana
+  what-is-gem:
+    name: What is Grafana Enterprise Metrics?
+  what-is-gel:
+    name: What is Grafana Enterprise Logs?
+  what-is-get:
+    name: What is Grafana Enterprise Traces?
   workshop-summary:
     name: Workshop Summary

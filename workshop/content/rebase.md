@@ -1,1 +1,0 @@
-Keep that OCI image up-to-date

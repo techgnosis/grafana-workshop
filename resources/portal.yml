@@ -9,5 +9,6 @@ spec:
   workshops:
   - name: grafana
     capacity: 1
+    reserved: 0
     expires: 60m
     orphaned: 1m

@@ -1,14 +1,10 @@
-name: TBS
+name: grafana
 
 modules:
     activate:
     - workshop-overview
-    - setup-environment
-    - docker-login
-    - buildpacks
-    - clusterstores
-    - clusterstacks
-    - builders
-    - images
-    - rebase
+    - what-is-grafana
+    - what-is-gem
+    - what-is-gel
+    - what-is-get
     - workshop-summary
