@@ -1,0 +1,14 @@
+name: TBS
+
+modules:
+    activate:
+    - workshop-overview
+    - setup-environment
+    - docker-login
+    - buildpacks
+    - clusterstores
+    - clusterstacks
+    - builders
+    - images
+    - rebase
+    - workshop-summary
