@@ -2,5 +2,5 @@
 
 set -euo pipefail
 
-kapp deploy -a tbs-workshop \
+kapp deploy -a grafana-workshop \
 -f resources

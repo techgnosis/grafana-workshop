@@ -2,7 +2,7 @@ apiVersion: cert-manager.io/v1alpha2
 kind: Certificate
 metadata:
   name: educates
-  namespace: educates
+  namespace: eduk8s
 spec:
   dnsNames:
   - "*.educates.lab.home"

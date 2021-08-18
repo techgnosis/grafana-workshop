@@ -5,5 +5,4 @@ metadata:
 spec:
   ingress:
     domain: educates.lab.home
-    protocol: http
-    class: nginx
+    secret: educates-tls

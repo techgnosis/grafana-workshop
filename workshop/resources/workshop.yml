@@ -1,57 +1,23 @@
 apiVersion: training.eduk8s.io/v1alpha2
 kind: Workshop
 metadata:
-  name: tanzu-build-service
+  name: grafana
 spec:
-  title: Tanzu Build Service
-  description: Making secure images with Tanzu Build Service
+  vendor: Grafana Labs
+  title: Grafana Stack
+  description: MLTs with Grafana
   content:
-    image: harbor.lab.home/library/eduk8s-tbs:latest
+    files: 
   duration: 60m
   session:
     namespaces:
-      budget: large
+      budget: small
     applications:
       docker:
-        enabled: true
+        enabled: false
       terminal:
-        enabled: true
+        enabled: false
       console:
         enabled: false
       editor:
         enabled: false
-    objects:
-      - apiVersion: rbac.authorization.k8s.io/v1
-        kind: Role
-        metadata:
-          name: kpack-user
-        rules:
-        - apiGroups:
-          - kpack.io
-          resources:
-          - builds
-          - builders
-          - images
-          - sourceresolvers
-          - clusterstacks
-          - clusterstores
-          verbs:
-          - get
-          - list
-          - watch
-          - create
-          - delete
-          - patch
-          - update
-      - apiVersion: rbac.authorization.k8s.io/v1
-        kind: RoleBinding
-        metadata:
-          name: kpack-user
-        roleRef:
-          apiGroup: rbac.authorization.k8s.io
-          kind: Role
-          name: kpack-user
-        subjects:
-        - kind: ServiceAccount
-          namespace: $(workshop_namespace)
-          name: $(service_account)

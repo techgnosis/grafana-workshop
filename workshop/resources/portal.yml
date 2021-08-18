@@ -1,13 +1,13 @@
 apiVersion: training.eduk8s.io/v1alpha1
 kind: TrainingPortal
 metadata:
-  name: tbs-portal
+  name: grafana-portal
 spec:
   portal:
     registration:
       type: anonymous
   workshops:
-  - name: tanzu-build-service
+  - name: grafana
     capacity: 1
     expires: 60m
     orphaned: 1m
