@@ -7,7 +7,7 @@ spec:
   title: Grafana Stack
   description: MLTs with Grafana
   content:
-    files: 
+    files: github.com/techgnosis/grafana-workshop/workshop
   duration: 60m
   session:
     namespaces:
